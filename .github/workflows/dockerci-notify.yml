@@ -1,5 +1,5 @@
 
-name: Docker CI
+name: Docker CI and Telegram Notification
 
 
 on:
