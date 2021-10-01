@@ -35,7 +35,7 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 
 <br>
 <br>
-## Part III: Exploring Github Marketplace
+## Part III: Exploring GitHub Marketplace
 The [Marketplace](https://github.com/marketplace) is a pandora's box filled with plenty of interesting features. For this project, the intention was to include a notification action in the workflow that alerts the user on changes made with each iteration of workflow executed.
 
 Of the numerous options to select from, a Telegram notification action was the eventual choice. 
@@ -58,10 +58,10 @@ To incorporate this action in the workflow, there are a number of hoops to go th
 
 The following parameters are required:
 
-| Key         | Input                | 
-| ------------|----------------------| 
-| token       | Telegram Bot token   |
-| to          | Telegram Bot chat_id |
+| Key            | Input                | 
+| ---------------|----------------------| 
+| <b>`token`</b> | Telegram Bot token   |
+| <b>`to`</b>    | Telegram Bot chat_id |
 
 **_Telegram Notification:_**<br>
 <br>
