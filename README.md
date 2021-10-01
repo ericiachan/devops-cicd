@@ -34,7 +34,6 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 ![](docker-push-success.png)
 
 <br>
-<br>
 
 ## Part III: Exploring GitHub Marketplace
 The [Marketplace](https://github.com/marketplace) is a pandora's box filled with plenty of interesting features. For this project, the intention was to include a notification action in the workflow that alerts the user on changes made with each iteration of workflow executed.
@@ -43,18 +42,18 @@ Of the numerous options to select from, a Telegram notification action was the e
 <br>
 <br>
 ## Part IV: Sending a Notification 
-Building on the existing first half of the workflow, the second half incorporates a Telegram notification action in the workflow. Upon the Github Event trigger, a Telegram notification is sent to user to notify them on the commit made. 
+Building on the existing first half of the workflow, the second half incorporates a Telegram notification action in the workflow. Upon the Github Event trigger, a Telegram notification is sent to user to notify them on the changes made. 
 
-The following are details included in the Telegram notification:
+The following details are included in the Telegram notification:
   * Github event type (E.g. Push, Pull, etc)
   * ID of the commit made
   * Description of the commit made
   * User who triggered the event and made the commit
 
-To incorporate this action in the workflow, there are a number of hoops to go through:  
+To incorporate this action in the workflow, there are a number of steps to be taken:
 1. Create a Telegram Bot by speaking to the [BotFather](https://t.me/botfather). 
 2. Take note of the chat_id and token for the newly created Bot.
-3. Update the workflow .yml file to incorporate this Telegram notification feature. The Telegram Bot credentials are essential for this. 
+3. Update the workflow <b>`.yml`</b> file to incorporate this Telegram notification feature. The Telegram Bot credentials are essential for this. 
 4. Commit changes and await the notification from your Bot.
 
 The following parameters are required:
@@ -64,10 +63,12 @@ The following parameters are required:
 | <b>`token`</b> | Telegram Bot token   |
 | <b>`to`</b>    | Telegram Bot chat_id |
 
+
+###### <i>Important Note: [Github Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) is key to this workflow.</i> <br>
+
 **_Telegram Notification:_**<br>
 <br>
 <img src="devops-cicd-bot.png" width="400">
-
 
 
 
