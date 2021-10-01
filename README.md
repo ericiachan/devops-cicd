@@ -35,6 +35,7 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 
 <br>
 <br>
+
 ## Part III: Exploring GitHub Marketplace
 The [Marketplace](https://github.com/marketplace) is a pandora's box filled with plenty of interesting features. For this project, the intention was to include a notification action in the workflow that alerts the user on changes made with each iteration of workflow executed.
 
