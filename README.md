@@ -2,7 +2,7 @@
 
 # Overview <br>
 
-The [Docker CI and Telegram Notification](https://github.com/ericiachan/devops-cicd/actions/workflows/dockerci-notify.yml) workflow automates the build and push of the Docker Image to Docker Hub, and triggers a Telegram notification with details on the change committed, which sent is through a Telegram bot (@devops-cicd-bot). 
+The [Docker CI and Telegram Notification](https://github.com/ericiachan/devops-cicd/actions/workflows/dockerci-notify.yml) workflow automates the build and push of the Docker Image to Docker Hub, and triggers a Telegram notification with details on the changes committed, which sent is through a Telegram Bot (@devops-cicd-bot). 
 <br>
 <br>
 ## Part I: Initialize a Repository 
@@ -53,7 +53,7 @@ The following details are included in the Telegram notification:
 To incorporate this action in the workflow, there are a number of steps to be taken:
 1. Create a Telegram Bot by speaking to the [BotFather](https://t.me/botfather). 
 2. Take note of the chat_id and token for the newly created Bot.
-3. Update the workflow <b>`.yml`</b> file to incorporate this Telegram notification feature. The Telegram Bot credentials are essential for this. 
+3. Update the workflow <b>`.yml`</b> file to incorporate this Telegram notification action The Telegram Bot credentials are essential for this. 
 4. Commit changes and await the notification from your Bot.
 
 The following parameters are required:
