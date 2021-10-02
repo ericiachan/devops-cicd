@@ -77,6 +77,7 @@ To verify the status of the workflow, proceed to [Actions](https://github.com/er
 > * If there are errors in the workflow, <b>`Failure`</b> will be reflected under the <b>`Status`</b> header. 
 
 **_Docker CI and Telegram Notification Workflow:_**<br>
+<br>
 ![](workflow-success.png)
 
 
