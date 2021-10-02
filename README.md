@@ -69,8 +69,15 @@ The following parameters are required:
 **_Telegram Notification:_**<br>
 <br>
 <img src="devops-cicd-bot.png" width="400">
+<br>
+<br>
+## Part V: Workflow Status
+To verify the status of the workflow, proceed to [Actions](https://github.com/ericiachan/devops-cicd/actions). 
+> * If the workflow is successfully executed, <b>`Success`</b> will be reflected under the <b>`Status`</b> header.<br> 
+> * If there are errors in the workflow, <b>`Failure`</b> will be reflected under the <b>`Status`</b> header. 
 
-
+**_Docker CI and Telegram Notification Workflow:_**<br>
+![](workflow-success.png)
 
 
 
