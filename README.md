@@ -27,11 +27,11 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 
 **_Before workflow execution:_**
 
-![](docker-empty-repository.png)
+<img src ="images/docker-empty-repository.png">
 
 **_After workflow execution:_**
 
-![](docker-push-success.png)
+<img src ="images/docker-push-success.png">
 
 <br>
 
@@ -68,7 +68,7 @@ The following parameters are required:
 
 **_Telegram Notification:_**<br>
 <br>
-<img src="devops-cicd-bot.png" width="400">
+<img src="images/devops-cicd-bot.png" width="400">
 <br>
 <br>
 ## Part V: Workflow Status
@@ -78,7 +78,7 @@ To verify the status of the workflow, proceed to [Actions](https://github.com/er
 
 **_Docker CI and Telegram Notification Workflow:_**<br>
 <br>
-![](workflow-success.png)
+<img src ="images/workflow-success.png">
 
 
 
