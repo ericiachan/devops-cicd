@@ -1,4 +1,4 @@
-name: cloudrun-deployment
+name: Google Cloud Run Deployment
 
 on:
   push:
