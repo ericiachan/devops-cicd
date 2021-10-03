@@ -90,6 +90,8 @@ To verify the status of the workflow, proceed to [Actions](https://github.com/er
 **_Workflow Status:_**<br>
 <br>
 <img src ="images/workflow-success.png">
+<img src ="images/docker-notify-success.png">
+<img src ="images/cloud-deployment-success.png">
 
 
 
