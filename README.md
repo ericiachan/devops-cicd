@@ -3,13 +3,20 @@
 # Overview <br>
 
 The [Docker CI and Telegram Notification](https://github.com/ericiachan/devops-cicd/actions/workflows/dockerci-notify.yml) workflow automates the build and push of the Docker Image to Docker Hub, and triggers a Telegram notification with details on the changes committed, which sent is through a Telegram Bot (@devops-cicd-bot). 
+
+The [Google Cloud Run Deployment](https://github.com/ericiachan/devops-cicd/blob/main/.github/workflows/deploy.yml) workflow automates the setup, build, publishing and deployment of the project to Google Cloud Run. 
 <br>
 <br>
 ## Part I: Initialize a Repository 
 Begin by initializing an empty repository and uploading the necessary files to the respository. 
 <br>
 <br>
-## Part II: Build and Push Docker Image 
+## Part II: Exploring GitHub Marketplace
+The [GitHub Marketplace](https://github.com/marketplace) is filled with plenty of interesting tools for workflow improvements. For this project, the intention was to include a notification action in the workflow that alerts the user on changes made with each iteration of workflow executed.
+
+Tapping into the numerous notification options available, a Telegram notification action was the eventual choice for this project.
+
+## Part III: Docker CI and Telegram Notification Workflow
 The first part of the workflow focuses on building and pushing the Docker Image to a repository in Docker Hub. Each time a Github Event (Push/Pull) is committed, the workflow will be triggered and the aforementioned action will take place. 
 
 The following parameters are required:
@@ -33,16 +40,9 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 
 <img src ="images/docker-push-success.png">
 
-<br>
 
-## Part III: Exploring GitHub Marketplace
-The [GitHub Marketplace](https://github.com/marketplace) is filled with plenty of interesting tools for workflow improvements. For this project, the intention was to include a notification action in the workflow that alerts the user on changes made with each iteration of workflow executed.
-
-Tapping into the numerous notification options available, a Telegram notification action was the eventual choice for this project.
-<br>
-<br>
-## Part IV: Sending a Notification 
-Building on the existing first half of the workflow, the second half incorporates a Telegram notification action in the workflow. Upon the Github Event trigger, a Telegram notification is sent to user to notify them on the changes made. 
+## Sending a Telegram Notification
+Building on the existing workflow, the second half incorporates a Telegram notification action. Upon the Github Event trigger, a Telegram notification is sent to user to notify them on the changes made. 
 
 The following details are included in the Telegram notification:
   * Github event type (E.g. Push, Pull, etc)
@@ -71,12 +71,23 @@ The following parameters are required:
 <img src="images/devops-cicd-bot.png" width="400">
 <br>
 <br>
-## Part V: Workflow Status
+## Part V: Google Cloud Run Deployment Workflow 
+For this workflow, the primary steps are:
+1. Enable Google Cloud Run and Cloud Build API.
+2. Configure Google Authentication (credentials are necessary for a successful deployment).
+3. Ensure necessary files are in the Github repository. 
+4. Create workflow using Github Actions.
+5. Deploy!
+
+Live endpoint for the project: https://devops-cicd-o7v2rv5pfq-uc.a.run.app/
+<br>
+<br>
+## Part VI: Workflow Status
 To verify the status of the workflow, proceed to [Actions](https://github.com/ericiachan/devops-cicd/actions). 
 > * If the workflow is successfully executed, <b>`Success`</b> will be reflected under the <b>`Status`</b> header.<br> 
 > * If there are errors in the workflow, <b>`Failure`</b> will be reflected under the <b>`Status`</b> header. 
 
-**_Docker CI and Telegram Notification Workflow:_**<br>
+**_Workflow Status:_**<br>
 <br>
 <img src ="images/workflow-success.png">
 
