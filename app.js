@@ -5,7 +5,7 @@ app.listen(8080, () => {
 });
 
 app.get("/", (req, res) => {
- res.send(["Endpoint is live, deployment success!"]);
+ res.send(["Endpoint is live - deployment success!"]);
 });
 
 app.get("/api", (req, res, next) => {
