@@ -34,11 +34,11 @@ Once the workflow has been executed successfully, changes to the Docker Hub repo
 
 **_Before workflow execution:_**
 
-<img src ="images/docker-empty-repository.png">
+<img src ="images/docker-empty-repository.png" width="600">
 
 **_After workflow execution:_**
 
-<img src ="images/docker-push-success.png">
+<img src ="images/docker-push-success.png" width="600">
 
 
 ## Sending a Telegram Notification
@@ -89,9 +89,13 @@ To verify the status of the workflow, proceed to [Actions](https://github.com/er
 
 **_Workflow Status:_**<br>
 <br>
-<img src ="images/workflow-success.png">
-<img src ="images/docker-notify-success.png">
-<img src ="images/cloud-deployment-success.png">
+<img src ="images/workflow-success.png" width="600">
+<br>
+<br>
+<img src ="images/docker-notify-success.png" width="600">
+<br>
+<br>
+<img src ="images/cloud-deployment-success.png" width="600">
 
 
 
