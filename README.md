@@ -89,13 +89,13 @@ To verify the status of the workflow, proceed to [Actions](https://github.com/er
 
 **_Workflow Status:_**<br>
 <br>
-<img src ="images/workflow-success.png" width="600">
+<img src ="images/workflow-success.png" width="800">
 <br>
 <br>
-<img src ="images/docker-notify-success.png" width="600">
+<img src ="images/docker-notify-success.png" width="800">
 <br>
 <br>
-<img src ="images/cloud-deployment-success.png" width="600">
+<img src ="images/cloud-deployment-success.png" width="800">
 
 
 
