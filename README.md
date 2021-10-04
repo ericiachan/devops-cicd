@@ -71,7 +71,7 @@ The following parameters are required:
 <img src="images/devops-cicd-bot.png" width="400">
 <br>
 <br>
-## Part V: Google Cloud Run Deployment Workflow 
+## Part IV: Google Cloud Run Deployment Workflow 
 For this workflow, the primary steps are:
 1. Enable Google Cloud Run and Cloud Build API.
 2. Configure Google Authentication (credentials are necessary for a successful deployment).
@@ -82,7 +82,7 @@ For this workflow, the primary steps are:
 Live endpoint for the project: https://devops-cicd-o7v2rv5pfq-uc.a.run.app/
 <br>
 <br>
-## Part VI: Workflow Status
+## Part V: Workflow Status
 To verify the status of the workflow, proceed to [Actions](https://github.com/ericiachan/devops-cicd/actions). 
 > * If the workflow is successfully executed, <b>`Success`</b> will be reflected under the <b>`Status`</b> header.<br> 
 > * If there are errors in the workflow, <b>`Failure`</b> will be reflected under the <b>`Status`</b> header. 
